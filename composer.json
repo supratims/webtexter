@@ -1,0 +1,17 @@
+{
+	"name": "supratims/php-bootstrap-server",
+	"description": "Simple php server to be used as bootstrap for a quick start",
+	"authors": [
+		{
+			"name": "Supratim Chowdhury",
+			"email": "supratims@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.6.0",
+		"m1ke/easy-sql": "dev-x1.5",
+		"slim/slim": "^3.5",
+		"monolog/monolog": "^1.21",
+		"twig/twig": "^1.24"
+	}
+}

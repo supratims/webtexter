@@ -1,0 +1,60 @@
+{% extends "layout.twig" %}
+{% set title='Dashboard' %}
+
+{% block css %}
+    <link rel="stylesheet" href="static/sass/dashboard.css">
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="phone home">
+            <header class="">
+                <p class="text-center text-gray-dark">+44 750 000 0000</p>
+                <p class="text-center my-0 ">Contacts</p>
+            </header>
+
+            <section class="contacts">
+                <ul class="contact-list">
+                    <li class="item">+44 740 345 9999</li>
+                    <li class="item">+44 740 345 9999</li>
+                </ul>
+            </section>
+
+            <section class="new-contact">
+                <p class="text-center font-weight-bold">Add a new contact</p>
+                <input class="offset-3 col-8" type="text" name="phone" placeholder="Enter a mobile number">
+            </section>
+
+        </div>
+
+        <div class="phone conversation">
+            <header>
+                <a href="#" class="float-left">&lt;</a>
+                <p class="text-center text-gray-dark my-0">+44 740 345 9999</p>
+            </header>
+
+            <section class="chatbox">
+                <ul id="message">
+                    <div class="time"><p></p></div>
+                    <div class="matt-line">
+                        <p>If anybody wanted to photograph my life, they'd get bored in a day.
+                        </p>
+                    </div>
+                    <li class="first">You gotteh be kiddin mi.</li>
+                    <li class="">You gotteh be kiddin mi.</li>
+                    <li class="">You gotteh be kiddin mi.</li>
+                </ul>
+            </section>
+
+            <section class="reply" id="reply">
+                <form>
+                    <input type="text" placeholder="Type message here">
+                    <button>Send</button>
+                </form>
+            </section>
+
+        </div>
+    </div>
+
+{% endblock %}
